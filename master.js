@@ -3,12 +3,6 @@ let teckSkills = document.querySelectorAll(".containerTeckSkill .skills");
 let ldSkills = document.querySelector(".movingSkills");
 
 
-
-// let cirOne = document.getElementById("CirOne");
-// let CirTwo = document.getElementById("CirTwo");
-// let CirThre = document.getElementById("CirThre");
-// let CirFour = document.getElementById("CirFour");
-
 let goBtns = document.querySelector (".btns");
 let hireBtn = document.querySelector (".btns .hireBtn");
 let cvBtn = document.querySelector (".btns .cvBtn");
@@ -31,10 +25,6 @@ window.onscroll = () => {
             skill.style.width = skill.dataset.width;
             skill.textContent = skill.dataset.width;
         })
-        // cirOne.style.strokeDashoffset= "455";
-        // CirTwo.style.strokeDashoffset= "325";
-        // CirThre.style.strokeDashoffset= "410";
-        // CirFour.style.strokeDashoffset= "435";
     } else if (window.scrollY < ldSkills.offsetTop - 500) {
         teckSkills.forEach((skill) => {
             skill.style.width = "0";
@@ -62,39 +52,15 @@ closeBtnLoc.addEventListener("click", () => {
     LocationBox.classList.remove("active");
 })
 
+// add the audio for any where in the page'
+var onlineSound = new Audio("./assets/audios/notification1.mp3");
 
-// for project btns change
-let AllBtnsProject = document.querySelectorAll(".projectsCap .head .btChange a");
-AllBtnsProject.forEach((btn)=> {
-    btn.addEventListener("click", ()=> {
-        AllBtnsProject.forEach((btn) => {
-            btn.classList.remove("active");
-            let getData = btn.dataset.clasg;
-            let showBig = document.querySelector(`.${getData}`);
-            showBig.classList.remove("active");
-        });
-        btn.classList.add("active");
-        let getData = btn.dataset.clasg;
-        let showBig = document.querySelector(`.${getData}`);
-        showBig.classList.add("active");
-    })
-})
+window.ononline = () => { onlineSound.play(); }
 
-// let sliderProjects = document.querySelector(".projectsCap .sliderProjects");
-// let test2 = document.querySelector(".projectsCap .testGrill");
-// let test3 = document.querySelector(".projectsCap .Gap");
+var sendingSound = new Audio("./assets/audios/notificationSending.mp3");
 
-// let Abtn = document.querySelector(".projectsCap .head .btChange .btnA");
-// let Bbtn = document.querySelector(".projectsCap .head .btChange .btnB");
-// let Cbtn = document.querySelector(".projectsCap .head .btChange .btnC");
-// console.log(Abtn);
+document.getElementById("subCont").onclick = () => {
+    sendingSound.play();
+}
 
-// if (Abtn.classList.contains("active")) {
-//     sliderProjects.style.display = "block";
-// }else { sliderProjects.style.display = "none"; }
-// if (Bbtn.classList.contains("active")) {
-//     test2.style.display = "block";
-// }else { test2.style.display = "none"; }
-// if (Cbtn.classList.contains("active")) {
-//     test3.style.display = "block";
-// }else { test3.style.display = "none"; }
+
