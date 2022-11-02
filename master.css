@@ -34,6 +34,7 @@ body {
 /* styling for scrollbar  */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 7px;
 }
 
 /* Track */
@@ -655,7 +656,7 @@ header .ulHeader li a:hover {
 
 /* Start About Us  */
 .containBoxUs {
-    background: url(https://cutewallpaper.org/28/cyberpunk-pixel-art-gif-wallpaper/rog-wallpaper-design-on-behance.gif);
+    background: url(./assets/imageKav/rog-wallpaper-design-on-behance.gif);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
