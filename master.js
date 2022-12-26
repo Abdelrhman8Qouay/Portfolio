@@ -2,7 +2,7 @@
 let teckSkills = document.querySelectorAll(".containerTeckSkill .skills");
 let ldSkills = document.querySelectorAll(".movingSkills");
 
-// Not Use Variables
+// Not Used Variables
 let goBtns = document.querySelector (".btns");
 let hireBtn = document.querySelector (".btns .hireBtn");
 let cvBtn = document.querySelector (".btns .cvBtn");

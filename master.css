@@ -15,15 +15,15 @@
 :root {
     --for-word: #ffffff;
     --body: #1d2a35;
-    --for-spesh: #1ebe6e;
-    --for-addition: #05ff82;
+    --for-spesh: #6f87cd;
+    --for-addition: #24cae8;
 }
 
 .tmode {
     --for-word: #212529;
     --body: #ffffff;
-    --for-spesh: #1ebebe;
-    --for-addition: #07fcfc;
+    --for-spesh: #1ebe6e;
+    --for-addition: #05ff82;
 }
 
 body {
@@ -1477,6 +1477,14 @@ footer .copyFoot a {
 
 /* End Footer   */
 
+
+/* bord between */
+.bordCl {
+    width: 100%;
+    height: 40px;
+    background-color: #41464b;
+    box-shadow: inset 0 0 5px 4px;
+}
 
 
 
